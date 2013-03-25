@@ -1,1 +1,6 @@
 name = Syslog Access
+description = Logs and records access statistics to syslog.
+package = Statistics
+core = 7.x
+files[] = syslog_access.test
+dependencies[] = better_statistics
