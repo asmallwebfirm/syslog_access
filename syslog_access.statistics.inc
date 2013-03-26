@@ -10,8 +10,6 @@
  * Implements hook_better_statistics_log().
  */
 function syslog_access_better_statistics_log($data) {
-  global $base_url;
-
   // Open the logging facility.
   $default_facility = defined('LOG_LOCAL0') ? LOG_LOCAL0 : LOG_USER;
   openlog(variable_get('syslog_access_identity', 'drupal-access'), LOG_NDELAY, variable_get('syslog_access_facility', $default_facility));
