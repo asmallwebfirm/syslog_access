@@ -19,7 +19,7 @@ class SyslogAccessTestCase extends DrupalWebTestCase {
   }
 
   function setUp() {
-    parent::setUp('syslog_access');
+    parent::setUp(array('statistics', 'syslog_access'));
   }
 
   /**
